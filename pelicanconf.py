@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Kenneth Feng'
-SITENAME = u'My Sandbox'
-SITEURL = ''
+SITENAME = u'Log@tomic'
+SITEURL = 'blog.kfeng.me'
 
 PATH = 'content'
 
@@ -34,8 +34,14 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 
 # Theme
-THEME = 'themes/elegant'
+THEME = 'my_themes/kfeng-blog'
 THEME_STATIC_PATHS = ['static']
 
+DISPLAY_PAGES_ON_MENU = True
+GOOGLE_ANALYTICS = 'UA-53437204-1'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# CNAME
+STATIC_PATHS = ['extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, }
