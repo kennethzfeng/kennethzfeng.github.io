@@ -1,1 +1,9 @@
 ghp/
+
+output/
+themes/
+
+# Development Server
+cache/
+pelican.pid
+srv.pid
