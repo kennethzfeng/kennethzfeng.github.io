@@ -43,5 +43,7 @@ GOOGLE_ANALYTICS = 'UA-53437204-1'
 #RELATIVE_URLS = True
 
 # CNAME
-STATIC_PATHS = ['extra/CNAME']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, }
+STATIC_PATHS = ['extra/CNAME', 'pdfs']
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'}
+}
