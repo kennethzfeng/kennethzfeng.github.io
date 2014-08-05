@@ -50,11 +50,11 @@
                         <span class="icon-bar"></span>
                         {% endfor %}
                     </button>
-                    <a class="navbar-brand" href="{{ SITEURL }}">{{ SITENAME }}</a>
+                    <a class="navbar-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="{% block navclass %}{{ NAVCLASS }}{% endblock %}"><a href="{{ SITEURL }}">Home</a></li> 
+                        <li class="{% block navclass %}{{ NAVCLASS }}{% endblock %}"><a href="{{ SITEURL }}/">Home</a></li> 
                         {% for p in PAGES %}
                             <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                         {% endfor %}
