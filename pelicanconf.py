@@ -38,7 +38,6 @@ THEME = 'my_themes/kfeng-blog'
 THEME_STATIC_PATHS = ['static']
 
 DISPLAY_PAGES_ON_MENU = True
-GOOGLE_ANALYTICS = 'UA-53437204-1'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
