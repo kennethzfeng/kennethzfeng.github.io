@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Articles in  - Log@tomic</title>
+        <title>Dynamically Create Javascript Classes - Log@tomic</title>
         <meta charset="utf-8" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -11,6 +11,7 @@
         <link href="/theme/static/css/style.css" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Log@tomic Full Atom Feed" />
+        <link href="/feeds/unsorted.atom.xml" type="application/atom+xml" rel="alternate" title="Log@tomic Categories Atom Feed" />
     </head>
 
     <body id="index" class="archive">
@@ -33,7 +34,7 @@
                             <span class="glyphicon glyphicon-home"></span> Home
                         </a></li> 
                             <li><a href="/pages/about-me.html">About Me</a></li>
-                            <li class="active"><a href="/archives.html">Archives</a></li>
+                            <li><a href="/archives.html">Archives</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
@@ -58,10 +59,31 @@
                 <div class="col-md-3">
                 </div>
                 <div class="col-md-7">
-<ul>
-    <li><a href="/category/python.html">Python</a></li>
-    <li><a href="/category/unsorted.html">unsorted</a></li>
-</ul>
+<section id="content" class="article content">
+  <header>
+    <h2 class="entry-title">
+      <a href="/dynamically-create-javascript-classes.html" rel="bookmark"
+         title="Permalink to Dynamically Create Javascript Classes">Dynamically Create Javascript Classes</a></h2>
+ 
+  </header>
+  
+     
+  <div class="entry-content">
+    <h4>Problem</h4>
+<p>Recently, I was asked to think of a way to dynamically create classes, which have static methods that are slightly different among dynamically created classes.</p>
+<h4>Solution</h4>
+<script src="https://gist.github.com/kennethzfeng/c9d65c3b736c787414b5.js"></script>
+
+<p>I used a factory-like function to generate class with a static method that closes on the parameter <em>name</em>.</p>
+  </div><!-- /.entry-content -->
+   <footer class="post-info text-muted">
+    Posted on <abbr class="published" title="2014-08-12T23:14:00">
+      Tue 12 August 2014
+    </abbr>
+    <address class="vcard author">
+      by <a class="url fn" href="/author/kenneth-feng.html">Kenneth Feng</a>
+    </address> in <a href="/category/unsorted.html">unsorted</a> Tagged <a href="/tag/javascript.html">javascript </a>  </footer><!-- /.post-info -->
+</section>
                 </div>
                 <div id="about" class="col-md-2">
                     <ul class="">
