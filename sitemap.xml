@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.kfeng.me/</loc>
+    <loc>http://kfeng.me/</loc>
     <lastmod>2014-08-12T22:13:48-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog.kfeng.me/2014/08/dynamically-create-javascript-classes/</loc>
+    <loc>http://kfeng.me/2014/08/dynamically-create-javascript-classes/</loc>
     <lastmod>2014-08-12T22:13:48-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.kfeng.me/pages/about/</loc>
+    <loc>http://kfeng.me/pages/about/</loc>
   </url>
   
 </urlset>

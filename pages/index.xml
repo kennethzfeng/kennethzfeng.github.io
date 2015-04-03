@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Kenneth Feng</title>
-    <link>http://blog.kfeng.me/pages/</link>
+    <link>http://kfeng.me/pages/</link>
     <description>Recent content in Pages on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://blog.kfeng.me/pages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kfeng.me/pages/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>http://blog.kfeng.me/pages/about/</link>
+      <link>http://kfeng.me/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.kfeng.me/pages/about/</guid>
+      <guid>http://kfeng.me/pages/about/</guid>
       <description>
 
 &lt;h1 id=&#34;about-me:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;About Me&lt;/h1&gt;
@@ -38,9 +38,9 @@
 &lt;h2 id=&#34;massive-open-online-courses-moocs:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Massive Open Online Courses (MOOCs)&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.kfeng.me/pdfs/coursera-computing-for-data-analysis.pdf&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.kfeng.me/pdfs/coursera-ml.pdf&#34;&gt;Machine Learning&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.kfeng.me/pdfs/coursera-data-analysis.pdf&#34;&gt;Data Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kfeng.me/pdfs/coursera-computing-for-data-analysis.pdf&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kfeng.me/pdfs/coursera-ml.pdf&#34;&gt;Machine Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kfeng.me/pdfs/coursera-data-analysis.pdf&#34;&gt;Data Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
