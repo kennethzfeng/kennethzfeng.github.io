@@ -1,10 +1,10 @@
-    <!DOCTYPE html>
+  <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title> Kenneth Feng &middot; Kenneth Feng </title>
+    <title> Dynamically Create Javascript Classes &middot; Kenneth Feng </title>
     
     <link rel="stylesheet" type="text/css" href="http://blog.kfeng.me//css/uno.min.css" />
     <link rel="stylesheet" type="text/css" href="http://blog.kfeng.me//css/lightGallery.css" />
@@ -12,20 +12,20 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.ico">
     
-    <link href="http://blog.kfeng.me/index.xml" rel="alternate" type="application/rss+xml" title="Kenneth Feng" />
+    <link href="" rel="alternate" type="application/rss+xml" title="Kenneth Feng" />
     
     <script src="http://blog.kfeng.me//js/jquery.min.js"></script>
     <script src="http://blog.kfeng.me//js/main.min.js">
     </script>
 </head>
 
-    <body>
-        <span class="mobile btn-mobile-menu">
+  <body>
+    <span class="mobile btn-mobile-menu">
         <i class="fa fa-bars btn-mobile-menu__icon"></i>
         <i class="fa fa-times btn-mobile-close__icon hidden"> </i>
     </span>
 
-<header class=" panel-cover "  id="scriptHeader">
+<header class="panel-cover panel-cover--collapsed"  id="scriptHeader">
     <div class="panel-main">
         <div class="panel-main__inner panel-inverted">
             <div class="panel-main__content"> 
@@ -116,40 +116,27 @@
     </header>
 </noscript>
 
-        <div class="content-wrapper">
-            <div class="content-wrapper__inner">
-                <section id="main">
-                    <div>
-                        
-                            
-                                <article class="post">
-<header>
-<h2><a href="http://blog.kfeng.me/2014/08/dynamically-create-javascript-classes/">Dynamically Create Javascript Classes </a> </h2>
-<div class="post-meta">Tue, Aug 12, 2014 - Read in 1 Min </div>
-</header>
-<div class="summary">
-    Problem Recently, I was asked to think of a way to dynamically create classes, which have static methods that are slightly different among dynamically created classes. Solution I used a factory-like function to generate class with a static method that closes on the parameter name.
-</div>
-<footer>
-<a href='http://blog.kfeng.me/2014/08/dynamically-create-javascript-classes/'><nobr>Read more →</nobr></a>
-</footer>
-</article>
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <div class="post">
+          <h1>Dynamically Create Javascript Classes</h1>
+          <span class="post-date">Tue, Aug 12, 2014</span>
+          
 
+<h4 id="problem:dbd9d4c9239a90647f9fb5991a49eb3b">Problem</h4>
 
-                            
-                        
-                            
-                        
-                    </div>
-                    </br>
-                    <h4>
-                        <a href="/post/">Archive</a>
-                    </h4>
-                </section>
-            </div>
+<p>Recently, I was asked to think of a way to dynamically create classes, which have static methods that are slightly different among dynamically created classes.</p>
+
+<h4 id="solution:dbd9d4c9239a90647f9fb5991a49eb3b">Solution</h4>
+
+<p><script src="https://gist.github.com/kennethzfeng/c9d65c3b736c787414b5.js"></script>
+I used a factory-like function to generate class with a static method that closes on the parameter name.</p>
+
         </div>
-        <footer class="footer"></footer>
-
         
-    </body>
+
+      </div>
+    </div>
+  </body>
+  
 </html>
