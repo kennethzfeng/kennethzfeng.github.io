@@ -16,32 +16,78 @@
       <guid>http://kfeng.me/pages/about/</guid>
       <description>
 
-&lt;h1 id=&#34;about-me:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;About Me&lt;/h1&gt;
+&lt;h2 id=&#34;profile:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Profile&lt;/h2&gt;
 
-&lt;p&gt;I&amp;rsquo;ve been teaching myself programming since I was fifteen.&lt;/p&gt;
+&lt;h3 id=&#34;work-experience:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Work Experience&lt;/h3&gt;
 
-&lt;h2 id=&#34;technologies-i-love:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Technologies I Love&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Golang&lt;/li&gt;
-&lt;li&gt;Python
+&lt;p&gt;&lt;strong&gt;Business Systems Developer&lt;/strong&gt; @ Intermedia | January 2015 - Present&lt;br&gt;
+&lt;strong&gt;Business Systems Analyst&lt;/strong&gt; @ Intermedia | May 2013 - December 2014&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Scientific Python Stacks (IPython Notebook / Numpy / Pandas)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Build and maintain Mulesoft Cloudhub integrations with NetSuite (ERP), Salesforce (CRM), Coupa, Marketo, MS SQL Server using Java / Spring Framework&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Design and support internal tools hosted on the Finance IT application server:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Expose Consolidated Exchange Rates and in NetSuite as REST API&lt;/li&gt;
+&lt;li&gt;Develope accounting tools for decoding QFX file and merging with CSV file using Python / Flask / Bootstrap&lt;/li&gt;
+&lt;li&gt;Enhance Journal Entry Approval in NetSuite via NetSuite SuiteBundle plugin using SuiteScript (JavaScript)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Java, Scala&lt;/li&gt;
-&lt;li&gt;R&lt;/li&gt;
-&lt;li&gt;Objective-C / Cocoa&lt;/li&gt;
-&lt;li&gt;Node.js&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;massive-open-online-courses-moocs:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Massive Open Online Courses (MOOCs)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Revenue Operations Analyst&lt;/strong&gt; @ Intermedia | May 2012 – April 2013&lt;br&gt;
+&lt;strong&gt;Billing Accountant&lt;/strong&gt; @ Intermedia | September 2011 – April 2012&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Identified billing limitations among distributor platforms and successfully communicated various requirements needed for platform integration to the product manager&lt;/li&gt;
+&lt;li&gt;Authored an IronPython script which cuts down monthly distributor channel order to invoice processing time by eight hours&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Compliance Assistant&lt;/strong&gt; @ Chinatown Federal Savings Bank | September 2011 – April 2012&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Built tools to query various spreadsheets using VBA’s ADODB Connection and speeded up the investigation workflow&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;languages-technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Languages &amp;amp; Technologies&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Python, Java, Go, R, SQL, Javascript, CSS&lt;/li&gt;
+&lt;li&gt;Linux, OS X, SAML, SOAP, REST, JIRA, Git, Maven&lt;/li&gt;
+&lt;li&gt;IPython, Numpy, Pandas, and Microsoft Excel with the PowerPivot plugin&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;education:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Education&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;CUNY Baruch College&lt;/strong&gt;&lt;br&gt;
+New York, NY&lt;br&gt;
+August 2006 - June 2010&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;B.B.A. in Finance and minored in Discrete Mathematics, June 2010. Magna Cum Laude. GPA: 3.8 / 4.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coursework&lt;/strong&gt;: Fundamentals of Data Structures and Algorithms, Combinatorics, and Graph Theory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Coursera&lt;/strong&gt;&lt;br&gt;
+Online&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://kfeng.me/pdfs/coursera-computing-for-data-analysis.pdf&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://kfeng.me/pdfs/coursera-ml.pdf&#34;&gt;Machine Learning&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://kfeng.me/pdfs/coursera-data-analysis.pdf&#34;&gt;Data Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&#34;conferences-hackathons:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Conferences &amp;amp; Hackathons&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;PyGotham 2014 Attendee&lt;/li&gt;
+&lt;li&gt;Comcast NBC Universal 2014 Hackathon Winner&lt;/li&gt;
+&lt;li&gt;Cornell HackMedNYC 2014 Attendee&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;languages:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Languages&lt;/h3&gt;
+
+&lt;p&gt;Fluent in Cantonese and Mandarin&lt;/p&gt;
 </description>
     </item>
     
