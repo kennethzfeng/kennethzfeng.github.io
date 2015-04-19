@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Kenneth Feng</title>
-    <link>http://kfeng.me/post/</link>
-    <description>Recent content in Posts on Kenneth Feng</description>
+    <title>Make on Kenneth Feng</title>
+    <link>http://kfeng.me/tags/make/</link>
+    <description>Recent content in Make on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Apr 2015 23:42:00 -0400</lastBuildDate>
-    <atom:link href="http://kfeng.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kfeng.me/tags/make/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Using Docker for Development</title>
@@ -140,25 +140,6 @@ test:
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Conclusion&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;With this approach, we can produce a reproducible environment for development and testing.  Instead of using a different database such as SQLite, or setting up a local instance of Postgres which will like to change over time, we can reproduce the same environment rapidly using make, docker, and docker-compose.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Dynamically Create Javascript Classes</title>
-      <link>http://kfeng.me/2014/08/dynamically-create-javascript-classes/</link>
-      <pubDate>Tue, 12 Aug 2014 22:13:48 -0400</pubDate>
-      
-      <guid>http://kfeng.me/2014/08/dynamically-create-javascript-classes/</guid>
-      <description>
-
-&lt;h4 id=&#34;problem:dbd9d4c9239a90647f9fb5991a49eb3b&#34;&gt;Problem&lt;/h4&gt;
-
-&lt;p&gt;Recently, I was asked to think of a way to dynamically create classes, which have static methods that are slightly different among dynamically created classes.&lt;/p&gt;
-
-&lt;h4 id=&#34;solution:dbd9d4c9239a90647f9fb5991a49eb3b&#34;&gt;Solution&lt;/h4&gt;
-
-&lt;p&gt;&lt;script src=&#34;https://gist.github.com/kennethzfeng/c9d65c3b736c787414b5.js&#34;&gt;&lt;/script&gt;
-I used a factory-like function to generate class with a static method that closes on the parameter name.&lt;/p&gt;
 </description>
     </item>
     
