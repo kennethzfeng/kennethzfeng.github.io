@@ -1,10 +1,10 @@
-    <!DOCTYPE html>
+  <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title> Development &middot; Kenneth Feng </title>
+    <title> Golang Gotcha &middot; Kenneth Feng </title>
     
     <link rel="stylesheet" type="text/css" href="http://kfeng.me//css/uno.min.css" />
     <link rel="stylesheet" type="text/css" href="http://kfeng.me//css/lightGallery.css" />
@@ -12,20 +12,20 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.ico">
     
-    <link href="http://kfeng.me/tags/development/index.xml" rel="alternate" type="application/rss+xml" title="Kenneth Feng" />
+    <link href="" rel="alternate" type="application/rss+xml" title="Kenneth Feng" />
     
     <script src="http://kfeng.me//js/jquery.min.js"></script>
     <script src="http://kfeng.me//js/main.min.js">
     </script>
 </head>
 
-    <body>
-        <span class="mobile btn-mobile-menu">
+  <body>
+    <span class="mobile btn-mobile-menu">
         <i class="fa fa-bars btn-mobile-menu__icon"></i>
         <i class="fa fa-times btn-mobile-close__icon hidden"> </i>
     </span>
 
-<header class=" panel-cover "  id="scriptHeader">
+<header class="panel-cover panel-cover--collapsed"  id="scriptHeader">
     <div class="panel-main">
         <div class="panel-main__inner panel-inverted">
             <div class="panel-main__content"> 
@@ -116,26 +116,33 @@
     </header>
 </noscript>
 
-        <div class="content-wrapper">
-            <div class="content-wrapper__inner">
-                
-                <h2>2015</h2>
-                <ul id="list">
-                    
-                    <li>
-                        <a href="http://kfeng.me/2015/09/golang-gotcha/">Golang Gotcha </a>
-                        <div class="meta">Sun, Sep 6, 2015</div>
-                    </li>
-                    
-                    <li>
-                        <a href="http://kfeng.me/2015/04/using-docker-for-development/">Using Docker for Development </a>
-                        <div class="meta">Sun, Apr 12, 2015</div>
-                    </li>
-                    
-                </ul>
-                
-            </div>
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <div class="post">
+          <h1>Golang Gotcha</h1>
+          <span class="post-date">Sun, Sep 6, 2015</span>
+          <p>A few days ago, I ran into a Go gotcha which took me a while to figure it out.  Basically, I have the following code that prints out an item from a list of integers.  The item is being closed by a function closure inside the for loop.</p>
+
+<p>As you can see, this code looks perfectly normal for a Go beginner like me.</p>
+
+<script src="https://gist.github.com/kennethzfeng/7ea387e3a3b5c7ca67c8.js?file=wrong.go"></script>
+
+<p>Apparently, it was wrong because the temporary variable, <code>v</code> used in the for loop is being reused by the loop itself for Every iteration.  If you ran the code, you would get 7 three times.  It looks like the closure picked up the variable whose value is 7 at the end.</p>
+
+<p>To fix this issue, the solution is actually very simple.  You can simple re-declare the v inside the loop which shadows the v declared by the for loop although this approach might harm readability a bit.</p>
+
+<pre><code>v := v
+</code></pre>
+
+<p>Alternatively, you might be better off do a this, <code>vcopy := v</code>.</p>
+
+<script src="https://gist.github.com/kennethzfeng/7ea387e3a3b5c7ca67c8.js?file=right.go"></script>
+
         </div>
-    </body>
-    
+        
+
+      </div>
+    </div>
+  </body>
+  
 </html>

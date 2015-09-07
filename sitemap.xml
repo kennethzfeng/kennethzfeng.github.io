@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://kfeng.me/</loc>
-    <lastmod>2015-04-12T23:42:00-04:00</lastmod>
+    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://kfeng.me/2015/09/golang-gotcha/</loc>
+    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
   </url>
   
   <url>

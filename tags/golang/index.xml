@@ -6,8 +6,33 @@
     <description>Recent content in Golang on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Apr 2015 23:42:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2015 10:24:00 -0400</lastBuildDate>
     <atom:link href="http://kfeng.me/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Golang Gotcha</title>
+      <link>http://kfeng.me/2015/09/golang-gotcha/</link>
+      <pubDate>Sun, 06 Sep 2015 10:24:00 -0400</pubDate>
+      
+      <guid>http://kfeng.me/2015/09/golang-gotcha/</guid>
+      <description>&lt;p&gt;A few days ago, I ran into a Go gotcha which took me a while to figure it out.  Basically, I have the following code that prints out an item from a list of integers.  The item is being closed by a function closure inside the for loop.&lt;/p&gt;
+
+&lt;p&gt;As you can see, this code looks perfectly normal for a Go beginner like me.&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/kennethzfeng/7ea387e3a3b5c7ca67c8.js?file=wrong.go&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Apparently, it was wrong because the temporary variable, &lt;code&gt;v&lt;/code&gt; used in the for loop is being reused by the loop itself for Every iteration.  If you ran the code, you would get 7 three times.  It looks like the closure picked up the variable whose value is 7 at the end.&lt;/p&gt;
+
+&lt;p&gt;To fix this issue, the solution is actually very simple.  You can simple re-declare the v inside the loop which shadows the v declared by the for loop although this approach might harm readability a bit.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;v := v
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Alternatively, you might be better off do a this, &lt;code&gt;vcopy := v&lt;/code&gt;.&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/kennethzfeng/7ea387e3a3b5c7ca67c8.js?file=right.go&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
     
     <item>
       <title>Using Docker for Development</title>
