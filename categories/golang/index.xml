@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on Kenneth Feng</title>
-    <link>http://kfeng.me/categories/golang/</link>
+    <link>https://kfeng.me/categories/golang/</link>
     <description>Recent content in Golang on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Sep 2015 10:24:00 -0400</lastBuildDate>
-    <atom:link href="http://kfeng.me/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kfeng.me/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Golang Gotcha</title>
-      <link>http://kfeng.me/2015/09/golang-gotcha/</link>
+      <link>https://kfeng.me/2015/09/golang-gotcha/</link>
       <pubDate>Sun, 06 Sep 2015 10:24:00 -0400</pubDate>
       
-      <guid>http://kfeng.me/2015/09/golang-gotcha/</guid>
+      <guid>https://kfeng.me/2015/09/golang-gotcha/</guid>
       <description>&lt;p&gt;A few days ago, I ran into a Go gotcha which took me a while to figure it out.  Basically, I have the following code that prints out an item from a list of integers.  The item is being closed by a function closure inside the for loop.&lt;/p&gt;
 
 &lt;p&gt;As you can see, this code looks perfectly normal for a Go beginner like me.&lt;/p&gt;
@@ -36,10 +36,10 @@
     
     <item>
       <title>Using Docker for Development</title>
-      <link>http://kfeng.me/2015/04/using-docker-for-development/</link>
+      <link>https://kfeng.me/2015/04/using-docker-for-development/</link>
       <pubDate>Sun, 12 Apr 2015 23:42:00 -0400</pubDate>
       
-      <guid>http://kfeng.me/2015/04/using-docker-for-development/</guid>
+      <guid>https://kfeng.me/2015/04/using-docker-for-development/</guid>
       <description>&lt;p&gt;&lt;br/&gt;
 Docker is the new kid on the block.  I believe it is going to change how we develop software.
 Over the past few months, I have been trying to fit Docker into my daily workflow.  I finally cracked the formula.  It is amazing how easy it is.  We are going to piece together make, docker, and docker-compose (formerly known as fig) to streamline the workflow.&lt;/p&gt;

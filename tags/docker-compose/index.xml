@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker Compose on Kenneth Feng</title>
-    <link>http://kfeng.me/tags/docker-compose/</link>
+    <link>https://kfeng.me/tags/docker-compose/</link>
     <description>Recent content in Docker Compose on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Apr 2015 23:42:00 -0400</lastBuildDate>
-    <atom:link href="http://kfeng.me/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kfeng.me/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Using Docker for Development</title>
-      <link>http://kfeng.me/2015/04/using-docker-for-development/</link>
+      <link>https://kfeng.me/2015/04/using-docker-for-development/</link>
       <pubDate>Sun, 12 Apr 2015 23:42:00 -0400</pubDate>
       
-      <guid>http://kfeng.me/2015/04/using-docker-for-development/</guid>
+      <guid>https://kfeng.me/2015/04/using-docker-for-development/</guid>
       <description>&lt;p&gt;&lt;br/&gt;
 Docker is the new kid on the block.  I believe it is going to change how we develop software.
 Over the past few months, I have been trying to fit Docker into my daily workflow.  I finally cracked the formula.  It is amazing how easy it is.  We are going to piece together make, docker, and docker-compose (formerly known as fig) to streamline the workflow.&lt;/p&gt;

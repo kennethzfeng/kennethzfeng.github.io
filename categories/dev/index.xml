@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dev on Kenneth Feng</title>
-    <link>http://kfeng.me/categories/dev/</link>
+    <link>https://kfeng.me/categories/dev/</link>
     <description>Recent content in Dev on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Aug 2014 22:13:48 -0400</lastBuildDate>
-    <atom:link href="http://kfeng.me/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kfeng.me/categories/dev/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Dynamically Create Javascript Classes</title>
-      <link>http://kfeng.me/2014/08/dynamically-create-javascript-classes/</link>
+      <link>https://kfeng.me/2014/08/dynamically-create-javascript-classes/</link>
       <pubDate>Tue, 12 Aug 2014 22:13:48 -0400</pubDate>
       
-      <guid>http://kfeng.me/2014/08/dynamically-create-javascript-classes/</guid>
+      <guid>https://kfeng.me/2014/08/dynamically-create-javascript-classes/</guid>
       <description>
 
 &lt;h4 id=&#34;problem:dbd9d4c9239a90647f9fb5991a49eb3b&#34;&gt;Problem&lt;/h4&gt;

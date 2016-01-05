@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://kfeng.me/</loc>
+    <loc>https://kfeng.me/</loc>
     <lastmod>2015-09-06T10:24:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://kfeng.me/2015/09/golang-gotcha/</loc>
+    <loc>https://kfeng.me/2015/09/golang-gotcha/</loc>
     <lastmod>2015-09-06T10:24:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://kfeng.me/2015/04/using-docker-for-development/</loc>
+    <loc>https://kfeng.me/2015/04/using-docker-for-development/</loc>
     <lastmod>2015-04-12T23:42:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://kfeng.me/2014/08/dynamically-create-javascript-classes/</loc>
+    <loc>https://kfeng.me/2014/08/dynamically-create-javascript-classes/</loc>
     <lastmod>2014-08-12T22:13:48-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://kfeng.me/pages/about/</loc>
+    <loc>https://kfeng.me/pages/about/</loc>
   </url>
   
 </urlset>
