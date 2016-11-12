@@ -5,7 +5,7 @@
   <title>Dynamically Create Javascript Classes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.16-DEV" />
+  <meta name="generator" content="Hugo 0.18-DEV" />
   <link href="" rel="alternate" type="application/rss+xml" title="Kenneth Feng" />
   <link href="https://kfeng.me//css/bootstrap.min.css" rel="stylesheet">
   <link href="https://kfeng.me//css/hc.css" rel="stylesheet">
@@ -35,7 +35,7 @@
 					
 					<li><a href="https://kfeng.me/post/">Blog </a></li>
 					
-					<li><a href="https://kfeng.me/pages/about/">CV </a></li>
+					<li><a href="https://kfeng.me/pages/about/">Cv </a></li>
 					
 					<li><a href="https://kfeng.me/">Home </a></li>
 					
@@ -49,13 +49,13 @@
        
        <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-					<img src="/pics/me.png" />
+					<img src="" />
           <li class="sidebar-brand"><a href="https://kfeng.me//"><h1 class="brand">Kenneth Feng</h1></a><h3></h3></li>
           <hr />
 					
 						<li><a href="https://kfeng.me/post/">Blog </a></li>
 					
-						<li><a href="https://kfeng.me/pages/about/">CV </a></li>
+						<li><a href="https://kfeng.me/pages/about/">Cv </a></li>
 					
 						<li><a href="https://kfeng.me/">Home </a></li>
 					
@@ -80,11 +80,11 @@
    <div class="post">
      
 
-<h4 id="problem:dbd9d4c9239a90647f9fb5991a49eb3b">Problem</h4>
+<h4 id="problem">Problem</h4>
 
 <p>Recently, I was asked to think of a way to dynamically create classes, which have static methods that are slightly different among dynamically created classes.</p>
 
-<h4 id="solution:dbd9d4c9239a90647f9fb5991a49eb3b">Solution</h4>
+<h4 id="solution">Solution</h4>
 
 <p><script src="https://gist.github.com/kennethzfeng/c9d65c3b736c787414b5.js"></script>
 I used a factory-like function to generate class with a static method that closes on the parameter name.</p>

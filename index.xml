@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kenneth Feng</title>
-    <link>https://kfeng.me/</link>
+    <link>https://kfeng.me/index.xml</link>
     <description>Recent content on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</copyright>
     <lastBuildDate>Sun, 06 Sep 2015 10:24:00 -0400</lastBuildDate>
     <atom:link href="https://kfeng.me/index.xml" rel="self" type="application/rss+xml" />
     
@@ -176,11 +177,11 @@ test:
       <guid>https://kfeng.me/2014/08/dynamically-create-javascript-classes/</guid>
       <description>
 
-&lt;h4 id=&#34;problem:dbd9d4c9239a90647f9fb5991a49eb3b&#34;&gt;Problem&lt;/h4&gt;
+&lt;h4 id=&#34;problem&#34;&gt;Problem&lt;/h4&gt;
 
 &lt;p&gt;Recently, I was asked to think of a way to dynamically create classes, which have static methods that are slightly different among dynamically created classes.&lt;/p&gt;
 
-&lt;h4 id=&#34;solution:dbd9d4c9239a90647f9fb5991a49eb3b&#34;&gt;Solution&lt;/h4&gt;
+&lt;h4 id=&#34;solution&#34;&gt;Solution&lt;/h4&gt;
 
 &lt;p&gt;&lt;script src=&#34;https://gist.github.com/kennethzfeng/c9d65c3b736c787414b5.js&#34;&gt;&lt;/script&gt;
 I used a factory-like function to generate class with a static method that closes on the parameter name.&lt;/p&gt;
@@ -195,11 +196,12 @@ I used a factory-like function to generate class with a static method that close
       <guid>https://kfeng.me/pages/about/</guid>
       <description>
 
-&lt;h2 id=&#34;profile:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Profile&lt;/h2&gt;
+&lt;h2 id=&#34;profile&#34;&gt;Profile&lt;/h2&gt;
 
-&lt;h3 id=&#34;work-experience:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Work Experience&lt;/h3&gt;
+&lt;h3 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Business Systems Developer&lt;/strong&gt; @ Intermedia | January 2015 - Present&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Systems Engineer&lt;/strong&gt; @ Yext | June 2016 - Present&lt;br&gt;
+&lt;strong&gt;Business Systems Developer&lt;/strong&gt; @ Intermedia | January 2015 - June 2016&lt;br&gt;
 &lt;strong&gt;Business Systems Analyst&lt;/strong&gt; @ Intermedia | May 2013 - December 2014&lt;/p&gt;
 
 &lt;ul&gt;
@@ -228,7 +230,7 @@ I used a factory-like function to generate class with a static method that close
 &lt;li&gt;Built tools to query various spreadsheets using VBA’s ADODB Connection and speeded up the investigation workflow&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;languages-technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Languages &amp;amp; Technologies&lt;/h3&gt;
+&lt;h3 id=&#34;languages-technologies&#34;&gt;Languages &amp;amp; Technologies&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Python, Java, Go, R, SQL, Javascript, CSS&lt;/li&gt;
@@ -236,7 +238,7 @@ I used a factory-like function to generate class with a static method that close
 &lt;li&gt;IPython, Numpy, Pandas, and Microsoft Excel with the PowerPivot plugin&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;education:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Education&lt;/h3&gt;
+&lt;h3 id=&#34;education&#34;&gt;Education&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;CUNY Baruch College&lt;/strong&gt;&lt;br&gt;
 New York, NY&lt;br&gt;
@@ -256,7 +258,7 @@ Online&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://kfeng.me/pdfs/coursera-data-analysis.pdf&#34;&gt;Data Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;conferences-hackathons:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Conferences &amp;amp; Hackathons&lt;/h3&gt;
+&lt;h3 id=&#34;conferences-hackathons&#34;&gt;Conferences &amp;amp; Hackathons&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;PyGotham 2014 Attendee&lt;/li&gt;
@@ -264,7 +266,7 @@ Online&lt;/p&gt;
 &lt;li&gt;Cornell HackMedNYC 2014 Attendee&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;languages:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Languages&lt;/h3&gt;
+&lt;h3 id=&#34;languages&#34;&gt;Languages&lt;/h3&gt;
 
 &lt;p&gt;Fluent in Cantonese and Mandarin&lt;/p&gt;
 </description>

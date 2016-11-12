@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on Kenneth Feng</title>
-    <link>https://kfeng.me/tags/docker/</link>
+    <link>https://kfeng.me/tags/docker/index.xml</link>
     <description>Recent content in Docker on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Apr 2015 23:42:00 -0400</lastBuildDate>
+    <copyright>Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</copyright>
     <atom:link href="https://kfeng.me/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

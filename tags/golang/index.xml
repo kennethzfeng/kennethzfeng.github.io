@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on Kenneth Feng</title>
-    <link>https://kfeng.me/tags/golang/</link>
+    <link>https://kfeng.me/tags/golang/index.xml</link>
     <description>Recent content in Golang on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Sep 2015 10:24:00 -0400</lastBuildDate>
+    <copyright>Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</copyright>
     <atom:link href="https://kfeng.me/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
