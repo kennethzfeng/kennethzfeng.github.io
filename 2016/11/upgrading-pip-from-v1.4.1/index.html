@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Golang Gotcha</title>
+  <title>Upgrading pip from v1.4.1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.18-DEV" />
@@ -75,25 +75,15 @@
 
 
   <div id="article">
-   <div class="article-title">Golang Gotcha</div>
-   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2015-09-06</small></p> <hr/>
+   <div class="article-title">Upgrading pip from v1.4.1</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2016-11-15</small></p> <hr/>
    <div class="post">
-     <p>A few days ago, I ran into a Go gotcha which took me a while to figure it out.  Basically, I have the following code that prints out an item from a list of integers.  The item is being closed by a function closure inside the for loop.</p>
+     
 
-<p>As you can see, this code looks perfectly normal for a Go beginner like me.</p>
+<h2 id="story">Story</h2>
 
-<script src="https://gist.github.com/kennethzfeng/7ea387e3a3b5c7ca67c8.js?file=wrong.go"></script>
-
-<p>Apparently, it was wrong because the temporary variable, <code>v</code> used in the for loop is being reused by the loop itself for Every iteration.  If you ran the code, you would get 7 three times.  It looks like the closure picked up the variable whose value is 7 at the end.</p>
-
-<p>To fix this issue, the solution is actually very simple.  You can simple re-declare the v inside the loop which shadows the v declared by the for loop although this approach might harm readability a bit.</p>
-
-<pre><code>v := v
-</code></pre>
-
-<p>Alternatively, you might be better off do a this, <code>vcopy := v</code>.</p>
-
-<script src="https://gist.github.com/kennethzfeng/7ea387e3a3b5c7ca67c8.js?file=right.go"></script>
+<p>pip-v1.4.1 is installed by default when used with virtualenv on CentOS 6.  In a production environment, it is preferred to upgrade pip offline.  But, upgrading pip via <code>pip install --upgrade &lt;local-pip.whl&gt;</code> doesn&rsquo;t work.  If you had a virtualenv named <em>env</em>, it would remove env/bin/pip after the upgrade install.  After hours of testing, it appears that, instead of using a pip wheel, a source distribution tar.gz would work.
+<code>pip install --upgrade pip-9.0.1.tar.gz</code></p>
 
    </div>
  </div>
@@ -103,8 +93,8 @@
  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
  <ul class="pager">
-      &nbsp;<li class="previous"><a href="https://kfeng.me/2016/11/upgrading-pip-from-v1.4.1/"> Upgrading pip from v1.4.1</a></li>
-      &nbsp;<li class="next"><a href="https://kfeng.me/2015/04/using-docker-for-development/"> Using Docker for Development</a></li>
+     
+      &nbsp;<li class="next"><a href="https://kfeng.me/2015/09/golang-gotcha/"> Golang Gotcha</a></li>
 </ul>
 
 

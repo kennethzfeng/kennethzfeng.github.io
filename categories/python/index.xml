@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Kenneth Feng</title>
+    <link>https://kfeng.me/categories/python/index.xml</link>
+    <description>Recent content in Python on Kenneth Feng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</copyright>
+    <atom:link href="https://kfeng.me/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Upgrading pip from v1.4.1</title>
+      <link>https://kfeng.me/2016/11/upgrading-pip-from-v1.4.1/</link>
+      <pubDate>Tue, 15 Nov 2016 06:21:15 -0500</pubDate>
+      
+      <guid>https://kfeng.me/2016/11/upgrading-pip-from-v1.4.1/</guid>
+      <description>
+
+&lt;h2 id=&#34;story&#34;&gt;Story&lt;/h2&gt;
+
+&lt;p&gt;pip-v1.4.1 is installed by default when used with virtualenv on CentOS 6.  In a production environment, it is preferred to upgrade pip offline.  But, upgrading pip via &lt;code&gt;pip install --upgrade &amp;lt;local-pip.whl&amp;gt;&lt;/code&gt; doesn&amp;rsquo;t work.  If you had a virtualenv named &lt;em&gt;env&lt;/em&gt;, it would remove env/bin/pip after the upgrade install.  After hours of testing, it appears that, instead of using a pip wheel, a source distribution tar.gz would work.
+&lt;code&gt;pip install --upgrade pip-9.0.1.tar.gz&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
