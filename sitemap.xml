@@ -22,70 +22,70 @@
   </url>
   
   <url>
-    <loc>https://kfeng.me/pages/about.html</loc>
+    <loc>https://kfeng.me/pages/about/</loc>
   </url>
   
   <url>
-    <loc>https://kfeng.me/categories</loc>
+    <loc>https://kfeng.me/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/categories/centos</loc>
+    <loc>https://kfeng.me/categories/centos/</loc>
     <lastmod>2016-11-15T06:21:15-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/categories/dev</loc>
+    <loc>https://kfeng.me/categories/dev/</loc>
     <lastmod>2014-08-12T22:13:48-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/tags/development</loc>
+    <loc>https://kfeng.me/tags/development/</loc>
     <lastmod>2015-09-06T10:24:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/categories/development</loc>
+    <loc>https://kfeng.me/categories/development/</loc>
     <lastmod>2015-09-06T10:24:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/tags/docker</loc>
+    <loc>https://kfeng.me/tags/docker/</loc>
     <lastmod>2015-04-12T23:42:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/tags/docker-compose</loc>
+    <loc>https://kfeng.me/tags/docker-compose/</loc>
     <lastmod>2015-04-12T23:42:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/tags/go</loc>
+    <loc>https://kfeng.me/tags/go/</loc>
     <lastmod>2015-09-06T10:24:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/tags/golang</loc>
+    <loc>https://kfeng.me/tags/golang/</loc>
     <lastmod>2015-09-06T10:24:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/categories/golang</loc>
+    <loc>https://kfeng.me/categories/golang/</loc>
     <lastmod>2015-09-06T10:24:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/tags/javascript</loc>
+    <loc>https://kfeng.me/tags/javascript/</loc>
     <lastmod>2014-08-12T22:13:48-04:00</lastmod>
     <priority>0</priority>
   </url>
@@ -97,30 +97,30 @@
   </url>
   
   <url>
-    <loc>https://kfeng.me/tags/make</loc>
+    <loc>https://kfeng.me/tags/make/</loc>
     <lastmod>2015-04-12T23:42:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/pages</loc>
+    <loc>https://kfeng.me/pages/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/post</loc>
+    <loc>https://kfeng.me/post/</loc>
     <lastmod>2016-11-15T06:21:15-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/categories/python</loc>
+    <loc>https://kfeng.me/categories/python/</loc>
     <lastmod>2016-11-15T06:21:15-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kfeng.me/tags</loc>
+    <loc>https://kfeng.me/tags/</loc>
     <priority>0</priority>
   </url>
   
