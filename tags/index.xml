@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Kenneth Feng</title>
+    <link>https://kfeng.me/tags/</link>
+    <description>Recent content in Tags on Kenneth Feng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 06 Sep 2015 10:24:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://kfeng.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development</title>
+      <link>https://kfeng.me/tags/development/</link>
+      <pubDate>Sun, 06 Sep 2015 10:24:00 -0400</pubDate>
+      
+      <guid>https://kfeng.me/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://kfeng.me/tags/docker/</link>
+      <pubDate>Sun, 12 Apr 2015 23:42:00 -0400</pubDate>
+      
+      <guid>https://kfeng.me/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker Compose</title>
+      <link>https://kfeng.me/tags/docker-compose/</link>
+      <pubDate>Sun, 12 Apr 2015 23:42:00 -0400</pubDate>
+      
+      <guid>https://kfeng.me/tags/docker-compose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://kfeng.me/tags/go/</link>
+      <pubDate>Sun, 06 Sep 2015 10:24:00 -0400</pubDate>
+      
+      <guid>https://kfeng.me/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://kfeng.me/tags/golang/</link>
+      <pubDate>Sun, 06 Sep 2015 10:24:00 -0400</pubDate>
+      
+      <guid>https://kfeng.me/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://kfeng.me/tags/javascript/</link>
+      <pubDate>Tue, 12 Aug 2014 22:13:48 -0400</pubDate>
+      
+      <guid>https://kfeng.me/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Make</title>
+      <link>https://kfeng.me/tags/make/</link>
+      <pubDate>Sun, 12 Apr 2015 23:42:00 -0400</pubDate>
+      
+      <guid>https://kfeng.me/tags/make/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

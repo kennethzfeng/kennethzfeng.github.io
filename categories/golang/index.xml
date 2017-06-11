@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on Kenneth Feng</title>
-    <link>https://kfeng.me/categories/golang/index.xml</link>
+    <link>https://kfeng.me/categories/golang/</link>
     <description>Recent content in Golang on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</copyright>
-    <atom:link href="https://kfeng.me/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Sep 2015 10:24:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://kfeng.me/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Golang Gotcha</title>
@@ -15,23 +18,9 @@
       <pubDate>Sun, 06 Sep 2015 10:24:00 -0400</pubDate>
       
       <guid>https://kfeng.me/2015/09/golang-gotcha/</guid>
-      <description>&lt;p&gt;A few days ago, I ran into a Go gotcha which took me a while to figure it out.  Basically, I have the following code that prints out an item from a list of integers.  The item is being closed by a function closure inside the for loop.&lt;/p&gt;
-
-&lt;p&gt;As you can see, this code looks perfectly normal for a Go beginner like me.&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/kennethzfeng/7ea387e3a3b5c7ca67c8.js?file=wrong.go&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Apparently, it was wrong because the temporary variable, &lt;code&gt;v&lt;/code&gt; used in the for loop is being reused by the loop itself for Every iteration.  If you ran the code, you would get 7 three times.  It looks like the closure picked up the variable whose value is 7 at the end.&lt;/p&gt;
-
-&lt;p&gt;To fix this issue, the solution is actually very simple.  You can simple re-declare the v inside the loop which shadows the v declared by the for loop although this approach might harm readability a bit.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;v := v
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Alternatively, you might be better off do a this, &lt;code&gt;vcopy := v&lt;/code&gt;.&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/kennethzfeng/7ea387e3a3b5c7ca67c8.js?file=right.go&#34;&gt;&lt;/script&gt;
-</description>
+      <description>A few days ago, I ran into a Go gotcha which took me a while to figure it out. Basically, I have the following code that prints out an item from a list of integers. The item is being closed by a function closure inside the for loop.
+As you can see, this code looks perfectly normal for a Go beginner like me.
+ Apparently, it was wrong because the temporary variable, v used in the for loop is being reused by the loop itself for Every iteration.</description>
     </item>
     
     <item>
@@ -40,132 +29,8 @@
       <pubDate>Sun, 12 Apr 2015 23:42:00 -0400</pubDate>
       
       <guid>https://kfeng.me/2015/04/using-docker-for-development/</guid>
-      <description>&lt;p&gt;&lt;br/&gt;
-Docker is the new kid on the block.  I believe it is going to change how we develop software.
-Over the past few months, I have been trying to fit Docker into my daily workflow.  I finally cracked the formula.  It is amazing how easy it is.  We are going to piece together make, docker, and docker-compose (formerly known as fig) to streamline the workflow.&lt;/p&gt;
-
-&lt;p&gt;For the purpose of this article, we are going to assume we have a web application which needs a postgres database as the backend.  With the power of docker and docker compose, we can quickly spin up the database quickly.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s just say you already have the following Production Dockerfile configured.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;FROM kennethzfeng/dockerize-python:2.7.8-onbuild
-
-
-EXPOSE 8000
-
-ENV APPLICATION_ENV Production
-
-CMD [&amp;quot;gunicorn&amp;quot;, &amp;quot;app:app&amp;quot;, &amp;quot;--worker-class&amp;quot;, &amp;quot;gevent&amp;quot;, &amp;quot;-b&amp;quot;, &amp;quot;0.0.0.0:8000&amp;quot;]
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You need to create a development version of Dockerfile called it something like &lt;code&gt;Dockerfile.dev&lt;/code&gt;.  Since we are going to mount the repository on the host machine to the web container instead of copying them over to the container on every signle build, this not only will save us tons Of time when building images, but also will serve as our hot reload.&lt;/p&gt;
-
-&lt;p&gt;Specifically, we mount the repository directory &lt;code&gt;.&lt;/code&gt; on the host machine to &lt;code&gt;/usr/src/app&lt;/code&gt; inside the web container.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;FROM kennethzfeng/dockerize-python:2.7.8
-
-RUN mkdir -p /usr/src/deps
-WORKDIR /usr/src/deps
-COPY requirements.txt /usr/src/deps/
-
-RUN pip install -r requirements.txt
-
-EXPOSE 8000
-
-ENV APPLICATION_ENV Development
-VOLUME /usr/src/app
-WORKDIR /usr/src/app
-
-CMD [&amp;quot;python&amp;quot;, &amp;quot;run_dev.py&amp;quot;]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Building the Image&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;At the time of writing this, Docker Compose doesn&amp;rsquo;t support building image using any file other than the default &lt;code&gt;Dockerfile&lt;/code&gt;.  (If you find a way to do this, please let me know.)  A workaround was using a Makefile goal to automate this.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;docker_build_image:
-    docker build -f Dockerfile.dev --name demo-app-dev .
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Docker-Compose&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Docker-Compose is very important to this whole workflow because it saves us from managing the container lifecycle ourselves.&lt;/p&gt;
-
-&lt;p&gt;For example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# create the container
-docker run --name abc demo-app-dev
-
-# done with the container
-# kill the container and remove the container
-docker kill abc
-docker rm abc
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is just for managing the web container.  We are not even couting all of the other work you need to do with the database container and linking them together.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;web:
-  image: demo-app-dev
-  volumes:
-    - .:/usr/src/app
-  ports:
-    - &amp;quot;80:8000&amp;quot;
-  links:
-    - db
-
-db:
-  image: postgres:9.3
-  ports:
-    - &amp;quot;5432:5432&amp;quot;
-  environment:
-    POSTGRES_USER: postgres
-    POSTGRES_PASSWORD: &amp;quot;&amp;quot;
-    PGPASSWORD: &amp;quot;&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;With docker-compose, you can build up a quite a bit of automation with make which you can then treat the entire stack as a service that you can just do service up and service down.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Makefile&#34;&gt;app=demo-app
-
-docker_dev_build:
-    docker build -t $(app)-dev -f Dockerfile.dev .
-
-docker_dev_up:
-    docker-compose -f dev.yml up
-
-docker_dev_rm:
-    docker-compose -f dev.yml rm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Initial Setup&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;For initializing the database for the first time, we can set up have docker-compose execute the psql utility to create some databases for development and testing.  In addition, I added the psql goal to give me quick access to the psql utility inside the container.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;create_db:
-	docker-compose -f dev.yml run db sh -c \
-		&#39;psql -h &amp;quot;$$DB_PORT_5432_TCP_ADDR&amp;quot; -p &amp;quot;$$DB_PORT_5432_TCP_PORT&amp;quot; -U &amp;quot;$$DB_ENV_POSTGRES_USER&amp;quot; -c &amp;quot;CREATE DATABASE core&amp;quot;&#39;
-	docker-compose -f dev.yml run db sh -c \
-		&#39;psql -h &amp;quot;$$DB_PORT_5432_TCP_ADDR&amp;quot; -p &amp;quot;$$DB_PORT_5432_TCP_PORT&amp;quot; -U &amp;quot;$$DB_ENV_POSTGRES_USER&amp;quot; -c &amp;quot;CREATE DATABASE test&amp;quot;&#39;
-
-psql:
-	docker-compose -f dev.yml run db sh -c \
-		&#39;psql -h &amp;quot;$$DB_PORT_5432_TCP_ADDR&amp;quot; -p &amp;quot;$$DB_PORT_5432_TCP_PORT&amp;quot; -U &amp;quot;$$DB_ENV_POSTGRES_USER&amp;quot;&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Once we have all of the databases created, we can execute the init script from Python which will create all the tables.  Also, I can run my unit test within the same environment.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;init_db:
-	docker-compose -f dev.yml run web python manage.py init
-
-test:
-	docker-compose -f dev.yml run web nosetests -v
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Conclusion&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;With this approach, we can produce a reproducible environment for development and testing.  Instead of using a different database such as SQLite, or setting up a local instance of Postgres which will like to change over time, we can reproduce the same environment rapidly using make, docker, and docker-compose.&lt;/p&gt;
-</description>
+      <description>Docker is the new kid on the block. I believe it is going to change how we develop software. Over the past few months, I have been trying to fit Docker into my daily workflow. I finally cracked the formula. It is amazing how easy it is. We are going to piece together make, docker, and docker-compose (formerly known as fig) to streamline the workflow.
+For the purpose of this article, we are going to assume we have a web application which needs a postgres database as the backend.</description>
     </item>
     
   </channel>

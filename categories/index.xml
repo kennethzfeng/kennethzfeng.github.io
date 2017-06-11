@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Kenneth Feng</title>
+    <link>https://kfeng.me/categories/</link>
+    <description>Recent content in Categories on Kenneth Feng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</copyright>
+    
+	<atom:link href="https://kfeng.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Centos</title>
+      <link>https://kfeng.me/categories/centos/</link>
+      <pubDate>Tue, 15 Nov 2016 06:21:15 -0500</pubDate>
+      
+      <guid>https://kfeng.me/categories/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev</title>
+      <link>https://kfeng.me/categories/dev/</link>
+      <pubDate>Tue, 12 Aug 2014 22:13:48 -0400</pubDate>
+      
+      <guid>https://kfeng.me/categories/dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://kfeng.me/categories/development/</link>
+      <pubDate>Sun, 06 Sep 2015 10:24:00 -0400</pubDate>
+      
+      <guid>https://kfeng.me/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://kfeng.me/categories/golang/</link>
+      <pubDate>Sun, 06 Sep 2015 10:24:00 -0400</pubDate>
+      
+      <guid>https://kfeng.me/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://kfeng.me/categories/python/</link>
+      <pubDate>Tue, 15 Nov 2016 06:21:15 -0500</pubDate>
+      
+      <guid>https://kfeng.me/categories/python/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

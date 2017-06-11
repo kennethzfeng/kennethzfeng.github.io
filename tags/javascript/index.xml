@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on Kenneth Feng</title>
-    <link>https://kfeng.me/tags/javascript/index.xml</link>
+    <link>https://kfeng.me/tags/javascript/</link>
     <description>Recent content in Javascript on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</copyright>
-    <atom:link href="https://kfeng.me/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Aug 2014 22:13:48 -0400</lastBuildDate>
+    
+	<atom:link href="https://kfeng.me/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Dynamically Create Javascript Classes</title>
@@ -15,17 +18,8 @@
       <pubDate>Tue, 12 Aug 2014 22:13:48 -0400</pubDate>
       
       <guid>https://kfeng.me/2014/08/dynamically-create-javascript-classes/</guid>
-      <description>
-
-&lt;h4 id=&#34;problem&#34;&gt;Problem&lt;/h4&gt;
-
-&lt;p&gt;Recently, I was asked to think of a way to dynamically create classes, which have static methods that are slightly different among dynamically created classes.&lt;/p&gt;
-
-&lt;h4 id=&#34;solution&#34;&gt;Solution&lt;/h4&gt;
-
-&lt;p&gt;&lt;script src=&#34;https://gist.github.com/kennethzfeng/c9d65c3b736c787414b5.js&#34;&gt;&lt;/script&gt;
-I used a factory-like function to generate class with a static method that closes on the parameter name.&lt;/p&gt;
-</description>
+      <description>Problem Recently, I was asked to think of a way to dynamically create classes, which have static methods that are slightly different among dynamically created classes.
+Solution  I used a factory-like function to generate class with a static method that closes on the parameter name.</description>
     </item>
     
   </channel>
