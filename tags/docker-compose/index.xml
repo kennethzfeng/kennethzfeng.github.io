@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker Compose on Kenneth Feng</title>
+    <title>Docker-Compose on Kenneth Feng</title>
     <link>https://kfeng.me/tags/docker-compose/</link>
-    <description>Recent content in Docker Compose on Kenneth Feng</description>
+    <description>Recent content in Docker-Compose on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</copyright>
     <lastBuildDate>Sun, 12 Apr 2015 23:42:00 -0400</lastBuildDate>
     
 	<atom:link href="https://kfeng.me/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />

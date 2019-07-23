@@ -3,31 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kfeng.me/2016/11/upgrading-pip-from-v1.4.1/</loc>
-    <lastmod>2016-11-15T06:21:15-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/2015/09/golang-gotcha/</loc>
-    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/2015/04/using-docker-for-development/</loc>
-    <lastmod>2015-04-12T23:42:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/2014/08/dynamically-create-javascript-classes/</loc>
-    <lastmod>2014-08-12T22:13:48-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/pages/about/</loc>
-  </url>
-  
-  <url>
     <loc>https://kfeng.me/categories/</loc>
+    <lastmod>2016-11-15T06:21:15-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -38,8 +15,31 @@
   </url>
   
   <url>
-    <loc>https://kfeng.me/categories/dev/</loc>
-    <lastmod>2014-08-12T22:13:48-04:00</lastmod>
+    <loc>https://kfeng.me/</loc>
+    <lastmod>2016-11-15T06:21:15-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/post/</loc>
+    <lastmod>2016-11-15T06:21:15-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/categories/python/</loc>
+    <lastmod>2016-11-15T06:21:15-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/2016/11/upgrading-pip-from-v1.4.1/</loc>
+    <lastmod>2016-11-15T06:21:15-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/categories/development/</loc>
+    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -50,7 +50,30 @@
   </url>
   
   <url>
-    <loc>https://kfeng.me/categories/development/</loc>
+    <loc>https://kfeng.me/tags/go/</loc>
+    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/categories/golang/</loc>
+    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/2015/09/golang-gotcha/</loc>
+    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/tags/</loc>
+    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/tags/golang/</loc>
     <lastmod>2015-09-06T10:24:00-04:00</lastmod>
     <priority>0</priority>
   </url>
@@ -68,33 +91,8 @@
   </url>
   
   <url>
-    <loc>https://kfeng.me/tags/go/</loc>
-    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/tags/golang/</loc>
-    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/categories/golang/</loc>
-    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/tags/javascript/</loc>
-    <lastmod>2014-08-12T22:13:48-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/</loc>
-    <lastmod>2016-11-15T06:21:15-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://kfeng.me/2015/04/using-docker-for-development/</loc>
+    <lastmod>2015-04-12T23:42:00-04:00</lastmod>
   </url>
   
   <url>
@@ -104,25 +102,28 @@
   </url>
   
   <url>
+    <loc>https://kfeng.me/categories/dev/</loc>
+    <lastmod>2014-08-12T22:13:48-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/2014/08/dynamically-create-javascript-classes/</loc>
+    <lastmod>2014-08-12T22:13:48-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/tags/javascript/</loc>
+    <lastmod>2014-08-12T22:13:48-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/pages/about/</loc>
+  </url>
+  
+  <url>
     <loc>https://kfeng.me/pages/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/post/</loc>
-    <lastmod>2016-11-15T06:21:15-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/categories/python/</loc>
-    <lastmod>2016-11-15T06:21:15-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/tags/</loc>
-    <lastmod>2015-09-06T10:24:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   

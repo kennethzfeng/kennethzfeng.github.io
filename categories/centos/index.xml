@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Centos on Kenneth Feng</title>
+    <title>CentOS on Kenneth Feng</title>
     <link>https://kfeng.me/categories/centos/</link>
-    <description>Recent content in Centos on Kenneth Feng</description>
+    <description>Recent content in CentOS on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</copyright>
     <lastBuildDate>Tue, 15 Nov 2016 06:21:15 -0500</lastBuildDate>
     
 	<atom:link href="https://kfeng.me/categories/centos/index.xml" rel="self" type="application/rss+xml" />

@@ -6,13 +6,13 @@
     <description>Recent content in Categories on Kenneth Feng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 15 Nov 2016 06:21:15 -0500</lastBuildDate>
     
 	<atom:link href="https://kfeng.me/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Centos</title>
+      <title>CentOS</title>
       <link>https://kfeng.me/categories/centos/</link>
       <pubDate>Tue, 15 Nov 2016 06:21:15 -0500</pubDate>
       
@@ -21,11 +21,11 @@
     </item>
     
     <item>
-      <title>Dev</title>
-      <link>https://kfeng.me/categories/dev/</link>
-      <pubDate>Tue, 12 Aug 2014 22:13:48 -0400</pubDate>
+      <title>Python</title>
+      <link>https://kfeng.me/categories/python/</link>
+      <pubDate>Tue, 15 Nov 2016 06:21:15 -0500</pubDate>
       
-      <guid>https://kfeng.me/categories/dev/</guid>
+      <guid>https://kfeng.me/categories/python/</guid>
       <description></description>
     </item>
     
@@ -39,7 +39,7 @@
     </item>
     
     <item>
-      <title>Golang</title>
+      <title>GoLang</title>
       <link>https://kfeng.me/categories/golang/</link>
       <pubDate>Sun, 06 Sep 2015 10:24:00 -0400</pubDate>
       
@@ -48,11 +48,11 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://kfeng.me/categories/python/</link>
-      <pubDate>Tue, 15 Nov 2016 06:21:15 -0500</pubDate>
+      <title>DEV</title>
+      <link>https://kfeng.me/categories/dev/</link>
+      <pubDate>Tue, 12 Aug 2014 22:13:48 -0400</pubDate>
       
-      <guid>https://kfeng.me/categories/python/</guid>
+      <guid>https://kfeng.me/categories/dev/</guid>
       <description></description>
     </item>
     
