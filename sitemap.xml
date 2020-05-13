@@ -123,6 +123,10 @@
   </url>
   
   <url>
+    <loc>https://kfeng.me/pages/tips/</loc>
+  </url>
+  
+  <url>
     <loc>https://kfeng.me/pages/</loc>
     <priority>0</priority>
   </url>
