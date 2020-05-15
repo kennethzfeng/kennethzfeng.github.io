@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Posts</title>
+  <title>Keep Bazel version consistent with Bazelisk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="Use Bazelisk to keep bazel version the same across many machines.">
   <meta name="generator" content="Hugo 0.55.5" />
-  <link href="https://kfeng.me/post/index.xml" rel="alternate" type="application/rss+xml" title="Kenneth Feng" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Kenneth Feng" />
   <link href="https://kfeng.me//css/bootstrap.min.css" rel="stylesheet">
   <link href="https://kfeng.me//css/hc.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -75,20 +75,47 @@
 
 
   <div id="article">
-      <h1>Posts</h1>
-  <ul class="posts">
-      
-      <li><span><a href="/2020/05/keep-bazel-version-consistent-with-bazelisk/">Keep Bazel version consistent with Bazelisk</a><time class="pull-right post-list">Thu, May 14, 2020</h4></time></span></span></li>
-      
-      <li><span><a href="/2016/11/upgrading-pip-from-v1.4.1/">Upgrading pip from v1.4.1</a><time class="pull-right post-list">Tue, Nov 15, 2016</h4></time></span></span></li>
-      
-      <li><span><a href="/2015/09/golang-gotcha/">Golang Gotcha</a><time class="pull-right post-list">Sun, Sep 6, 2015</h4></time></span></span></li>
-      
-      <li><span><a href="/2015/04/using-docker-for-development/">Using Docker for Development</a><time class="pull-right post-list">Sun, Apr 12, 2015</h4></time></span></span></li>
-      
-      <li><span><a href="/2014/08/dynamically-create-javascript-classes/">Dynamically Create Javascript Classes</a><time class="pull-right post-list">Tue, Aug 12, 2014</h4></time></span></span></li>
-      
-  </ul>
+   <div class="article-title">Keep Bazel version consistent with Bazelisk</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2020-05-14</small></p> <hr/>
+   <div class="post">
+     
+
+<h2 id="bazel">Bazel</h2>
+
+<p>Bazel is a build system, which allows you to build and test source code written in many programming languages and other things such as Protocol Buffer.
+Keeping bazel version consistent across developer machines and continuous integration machines is challenging.
+Often, a continuous integration machine is running an older version of bazel.  The bazel installation on the CI machine needs
+to be managed by someone who has privilege to install software.</p>
+
+<h2 id="tools-bazel">tools/bazel</h2>
+
+<p>Bazel provides a default way to wrap around the real Bazel binary on a machine.
+If <code>tools/bazel</code> exists in a repository, Bazel will execute the <code>tools/bazel</code> instead of the real bazel binary.
+<code>tools/bazel</code> can then ensure the bazel binary installed on the machine is the right version.</p>
+
+<h2 id="bazelisk">Bazelisk</h2>
+
+<p>If writing the <code>tools/bazel</code> script is too much work, using <a href="https://github.com/bazelbuild/bazelisk">Bazelisk</a> is
+another option.  The idea is to check in both the linux binary and the macos binary of bazelisk
+into the repository so that developer and the CI system can execute bazelisk without talking to the internet.
+For those using Windows, you can check in the window binary as well.</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="https://kfeng.me/2016/11/upgrading-pip-from-v1.4.1/"> Upgrading pip from v1.4.1</a></li>
+     
+</ul>
+
+
+
+    </ul>
+    </div>
     <footer>
 
         <p class="text-muted credit">Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</p>
