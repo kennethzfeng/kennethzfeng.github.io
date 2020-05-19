@@ -80,7 +80,8 @@ Business Systems Analyst @ Intermedia | May 2013 - December 2014
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kfeng.me/pages/tips/</guid>
-      <description>Tips Archive zip -r ../target.zip * - zip recrusively all the content under the current directory to the target.zip unzip -l /path/to/a.zip - list the content of the zip file</description>
+      <description>Tips Archive rpm package is a cpio archive.
+zip -r ../target.zip * - zip recrusively all the content under the current directory to the target.zip unzip -l /path/to/a.zip - list the content of the zip file</description>
     </item>
     
   </channel>
