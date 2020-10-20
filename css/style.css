@@ -13,10 +13,15 @@ a {
   text-decoration: inherit;
 }
 
-.section {
-  width: 50%;
+@media (min-width: 960px) {
+  .section {
+    width: 50%;
+  }
 }
 
+.section {
+  padding: 15px;
+}
 
 ul.nav {
   list-style-type: none;
