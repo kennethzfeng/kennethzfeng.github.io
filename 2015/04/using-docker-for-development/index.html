@@ -1,84 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Using Docker for Development</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.55.5" />
-  <link href="" rel="alternate" type="application/rss+xml" title="Kenneth Feng" />
-  <link href="https://kfeng.me//css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://kfeng.me//css/hc.css" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     
-    </head>
-    <body>
-<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
-      <div id = "wrapper">
+    
+    <title>Computer Technology | Using Docker for Development</title>
+</head>
+<body><div class="section">
+  <ul class="nav">
+    
+    <li>
+      <a class="nav-link" href="/">
+        Home
+      </a>
+    </li>
+    
+    <li>
+      <a class="nav-link" href="/post/">
+        Posts
+      </a>
+    </li>
+    
+    <li>
+      <a class="nav-link" href="/pages/about/">
+        Resume
+      </a>
+    </li>
+    
+  </ul>
+</div>
+<div class="section">
+<div>
+<h1>Using Docker for Development</h1>
 
 
-<div class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="https://kfeng.me//"><p class="navbar-brand">Kenneth Feng</p></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-					
-					
-					<li><a href="https://kfeng.me/post/">Blog </a></li>
-					
-					<li><a href="https://kfeng.me/pages/about/">Cv </a></li>
-					
-					<li><a href="https://kfeng.me/">Home </a></li>
-					
-          </ul>
-        </div>
-      </div>
-    </div>
+<i data-feather="calendar"></i>
+<time datetime="2015-04-12">Apr 12, 2015</time>
+
+<i data-feather="tag"></i>
 
 
+<a class="" href="https://kfeng.me/tags/development">Development</a>
 
-       
-       <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-					<img src="/pics/kenneth.jpg" />
-          <li class="sidebar-brand"><a href="https://kfeng.me//"><h1 class="brand">Kenneth Feng</h1></a><h3>My thoughts on software developments, cooking, and many other things in life</h3></li>
-          <hr />
-					
-						<li><a href="https://kfeng.me/post/">Blog </a></li>
-					
-						<li><a href="https://kfeng.me/pages/about/">Cv </a></li>
-					
-						<li><a href="https://kfeng.me/">Home </a></li>
-					
-          <hr />
-          <div id="social-wrapper">
-           <li> <a href="https://twitter.com/kennethzfeng"><i class="fa fa-twitter-square"></i> @twitter</a></li>
-           <li> <a href="https://linkedin.com/in/kennethzfeng"><i class="fa fa-linkedin-square"></i> linkedin</a> </li>
-           
-           <li> <a href="https://github.com/kennethzfeng"><i class="fa fa-github-square"></i> github</a> </li>
-         </div>
-       </ul>
-     </div>
+
+<a class="" href="https://kfeng.me/tags/golang">golang</a>
+
+
+<a class="" href="https://kfeng.me/tags/docker">Docker</a>
+
+
+<a class="" href="https://kfeng.me/tags/docker-compose">Docker-Compose</a>
+
+
+<a class="" href="https://kfeng.me/tags/make">make</a>
 
 
 
-     <div class="container">
-
-
-  <div id="article">
-   <div class="article-title">Using Docker for Development</div>
-   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2015-04-12</small></p> <hr/>
-   <div class="post">
-     <p><br/>
+<br><br>
+<p><br/>
 Docker is the new kid on the block.  I believe it is going to change how we develop software.
 Over the past few months, I have been trying to fit Docker into my daily workflow.  I finally cracked the formula.  It is amazing how easy it is.  We are going to piece together make, docker, and docker-compose (formerly known as fig) to streamline the workflow.</p>
 
@@ -204,32 +184,10 @@ test:
 
 <p>With this approach, we can produce a reproducible environment for development and testing.  Instead of using a different database such as SQLite, or setting up a local instance of Postgres which will like to change over time, we can reproduce the same environment rapidly using make, docker, and docker-compose.</p>
 
-   </div>
- </div>
+</div>
 
-
- <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
- <ul class="pager">
-      &nbsp;<li class="previous"><a href="https://kfeng.me/2014/08/dynamically-create-javascript-classes/"> Dynamically Create Javascript Classes</a></li>
-      &nbsp;<li class="next"><a href="https://kfeng.me/2015/09/golang-gotcha/"> Golang Gotcha</a></li>
-</ul>
-
-
-
-    </ul>
-    </div>
-    <footer>
-
-        <p class="text-muted credit">Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</p>
-    </footer>
- 
-    <script src="https://kfeng.me//js/jquery-1.10.2.min.js"></script>
-    <script src="https://kfeng.me//js/bootstrap.min.js"></script>
-    <script src="https://kfeng.me//js/bootstrap.js"></script>
-    <script type="text/javascript" src="https://kfeng.me//js/hc.js"></script>
+        </div><div class="section">
+  <p>Copyright © 2020 Kenneth Feng.  All Rights Reserved</p>
+</div>
 </body>
-
 </html>
-

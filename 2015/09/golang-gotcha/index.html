@@ -1,84 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Golang Gotcha</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.55.5" />
-  <link href="" rel="alternate" type="application/rss+xml" title="Kenneth Feng" />
-  <link href="https://kfeng.me//css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://kfeng.me//css/hc.css" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     
-    </head>
-    <body>
-<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
-      <div id = "wrapper">
+    
+    <title>Computer Technology | Golang Gotcha</title>
+</head>
+<body><div class="section">
+  <ul class="nav">
+    
+    <li>
+      <a class="nav-link" href="/">
+        Home
+      </a>
+    </li>
+    
+    <li>
+      <a class="nav-link" href="/post/">
+        Posts
+      </a>
+    </li>
+    
+    <li>
+      <a class="nav-link" href="/pages/about/">
+        Resume
+      </a>
+    </li>
+    
+  </ul>
+</div>
+<div class="section">
+<div>
+<h1>Golang Gotcha</h1>
 
 
-<div class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="https://kfeng.me//"><p class="navbar-brand">Kenneth Feng</p></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-					
-					
-					<li><a href="https://kfeng.me/post/">Blog </a></li>
-					
-					<li><a href="https://kfeng.me/pages/about/">Cv </a></li>
-					
-					<li><a href="https://kfeng.me/">Home </a></li>
-					
-          </ul>
-        </div>
-      </div>
-    </div>
+<i data-feather="calendar"></i>
+<time datetime="2015-09-06">Sep 6, 2015</time>
+
+<i data-feather="tag"></i>
 
 
+<a class="" href="https://kfeng.me/tags/go">Go</a>
 
-       
-       <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-					<img src="/pics/kenneth.jpg" />
-          <li class="sidebar-brand"><a href="https://kfeng.me//"><h1 class="brand">Kenneth Feng</h1></a><h3>My thoughts on software developments, cooking, and many other things in life</h3></li>
-          <hr />
-					
-						<li><a href="https://kfeng.me/post/">Blog </a></li>
-					
-						<li><a href="https://kfeng.me/pages/about/">Cv </a></li>
-					
-						<li><a href="https://kfeng.me/">Home </a></li>
-					
-          <hr />
-          <div id="social-wrapper">
-           <li> <a href="https://twitter.com/kennethzfeng"><i class="fa fa-twitter-square"></i> @twitter</a></li>
-           <li> <a href="https://linkedin.com/in/kennethzfeng"><i class="fa fa-linkedin-square"></i> linkedin</a> </li>
-           
-           <li> <a href="https://github.com/kennethzfeng"><i class="fa fa-github-square"></i> github</a> </li>
-         </div>
-       </ul>
-     </div>
+
+<a class="" href="https://kfeng.me/tags/development">Development</a>
+
+
+<a class="" href="https://kfeng.me/tags/golang">golang</a>
 
 
 
-     <div class="container">
-
-
-  <div id="article">
-   <div class="article-title">Golang Gotcha</div>
-   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2015-09-06</small></p> <hr/>
-   <div class="post">
-     <p>A few days ago, I ran into a Go gotcha which took me a while to figure it out.  Basically, I have the following code that prints out an item from a list of integers.  The item is being closed by a function closure inside the for loop.</p>
+<br><br>
+<p>A few days ago, I ran into a Go gotcha which took me a while to figure it out.  Basically, I have the following code that prints out an item from a list of integers.  The item is being closed by a function closure inside the for loop.</p>
 
 <p>As you can see, this code looks perfectly normal for a Go beginner like me.</p>
 
@@ -95,32 +69,10 @@
 
 <script src="https://gist.github.com/kennethzfeng/7ea387e3a3b5c7ca67c8.js?file=right.go"></script>
 
-   </div>
- </div>
+</div>
 
-
- <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
- <ul class="pager">
-      &nbsp;<li class="previous"><a href="https://kfeng.me/2015/04/using-docker-for-development/"> Using Docker for Development</a></li>
-      &nbsp;<li class="next"><a href="https://kfeng.me/2016/11/upgrading-pip-from-v1.4.1/"> Upgrading pip from v1.4.1</a></li>
-</ul>
-
-
-
-    </ul>
-    </div>
-    <footer>
-
-        <p class="text-muted credit">Copyright (c) 2014 - 2015, Kenneth Feng; all rights reserved.</p>
-    </footer>
- 
-    <script src="https://kfeng.me//js/jquery-1.10.2.min.js"></script>
-    <script src="https://kfeng.me//js/bootstrap.min.js"></script>
-    <script src="https://kfeng.me//js/bootstrap.js"></script>
-    <script type="text/javascript" src="https://kfeng.me//js/hc.js"></script>
+        </div><div class="section">
+  <p>Copyright © 2020 Kenneth Feng.  All Rights Reserved</p>
+</div>
 </body>
-
 </html>
-
