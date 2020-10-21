@@ -1,0 +1,46 @@
+body {
+  font-family: Arial;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #333333;
+}
+
+a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+}
+
+h1, h2, h3, p, time {
+  padding: 0 5px;
+}
+
+@media (min-width: 960px) {
+  .section {
+    width: 50%;
+  }
+  .profile-pic {
+    width: 50%;
+  }
+}
+
+.section {
+  padding: 0 15px;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 5px;
+}

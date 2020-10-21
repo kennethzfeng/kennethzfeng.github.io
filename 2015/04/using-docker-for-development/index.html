@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    
+    <title>Kenneth&#39;s Notepad | Using Docker for Development</title>
+</head>
+<body><div class="section">
+  <ul class="nav">
+    
+  </ul>
+</div>
+<div class="section">
+<div>
+<h1>Using Docker for Development</h1>
+
+  
+  
+  <i data-feather="calendar"></i>
+  <time datetime="2015-04-12">Apr 12, 2015</time>
+
+
+<br><br>
+<p><br/>
+Docker is the new kid on the block.  I believe it is going to change how we develop software.
+Over the past few months, I have been trying to fit Docker into my daily workflow.  I finally cracked the formula.  It is amazing how easy it is.  We are going to piece together make, docker, and docker-compose (formerly known as fig) to streamline the workflow.</p>
+
+<p>For the purpose of this article, we are going to assume we have a web application which needs a postgres database as the backend.  With the power of docker and docker compose, we can quickly spin up the database quickly.</p>
+
+<p>Let&rsquo;s just say you already have the following Production Dockerfile configured.</p>
+
+<pre><code>FROM kennethzfeng/dockerize-python:2.7.8-onbuild
+
+
+EXPOSE 8000
+
+ENV APPLICATION_ENV Production
+
+CMD [&quot;gunicorn&quot;, &quot;app:app&quot;, &quot;--worker-class&quot;, &quot;gevent&quot;, &quot;-b&quot;, &quot;0.0.0.0:8000&quot;]
+
+</code></pre>
+
+<p>You need to create a development version of Dockerfile called it something like <code>Dockerfile.dev</code>.  Since we are going to mount the repository on the host machine to the web container instead of copying them over to the container on every signle build, this not only will save us tons Of time when building images, but also will serve as our hot reload.</p>
+
+<p>Specifically, we mount the repository directory <code>.</code> on the host machine to <code>/usr/src/app</code> inside the web container.</p>
+
+<pre><code>FROM kennethzfeng/dockerize-python:2.7.8
+
+RUN mkdir -p /usr/src/deps
+WORKDIR /usr/src/deps
+COPY requirements.txt /usr/src/deps/
+
+RUN pip install -r requirements.txt
+
+EXPOSE 8000
+
+ENV APPLICATION_ENV Development
+VOLUME /usr/src/app
+WORKDIR /usr/src/app
+
+CMD [&quot;python&quot;, &quot;run_dev.py&quot;]
+</code></pre>
+
+<p><strong><em>Building the Image</em></strong></p>
+
+<p>At the time of writing this, Docker Compose doesn&rsquo;t support building image using any file other than the default <code>Dockerfile</code>.  (If you find a way to do this, please let me know.)  A workaround was using a Makefile goal to automate this.</p>
+
+<pre><code>docker_build_image:
+    docker build -f Dockerfile.dev --name demo-app-dev .
+</code></pre>
+
+<p><strong><em>Docker-Compose</em></strong></p>
+
+<p>Docker-Compose is very important to this whole workflow because it saves us from managing the container lifecycle ourselves.</p>
+
+<p>For example:</p>
+
+<pre><code># create the container
+docker run --name abc demo-app-dev
+
+# done with the container
+# kill the container and remove the container
+docker kill abc
+docker rm abc
+</code></pre>
+
+<p>This is just for managing the web container.  We are not even couting all of the other work you need to do with the database container and linking them together.</p>
+
+<pre><code>web:
+  image: demo-app-dev
+  volumes:
+    - .:/usr/src/app
+  ports:
+    - &quot;80:8000&quot;
+  links:
+    - db
+
+db:
+  image: postgres:9.3
+  ports:
+    - &quot;5432:5432&quot;
+  environment:
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: &quot;&quot;
+    PGPASSWORD: &quot;&quot;
+</code></pre>
+
+<p>With docker-compose, you can build up a quite a bit of automation with make which you can then treat the entire stack as a service that you can just do service up and service down.</p>
+
+<pre><code class="language-Makefile">app=demo-app
+
+docker_dev_build:
+    docker build -t $(app)-dev -f Dockerfile.dev .
+
+docker_dev_up:
+    docker-compose -f dev.yml up
+
+docker_dev_rm:
+    docker-compose -f dev.yml rm
+</code></pre>
+
+<p><strong><em>Initial Setup</em></strong></p>
+
+<p>For initializing the database for the first time, we can set up have docker-compose execute the psql utility to create some databases for development and testing.  In addition, I added the psql goal to give me quick access to the psql utility inside the container.</p>
+
+<pre><code>create_db:
+	docker-compose -f dev.yml run db sh -c \
+		'psql -h &quot;$$DB_PORT_5432_TCP_ADDR&quot; -p &quot;$$DB_PORT_5432_TCP_PORT&quot; -U &quot;$$DB_ENV_POSTGRES_USER&quot; -c &quot;CREATE DATABASE core&quot;'
+	docker-compose -f dev.yml run db sh -c \
+		'psql -h &quot;$$DB_PORT_5432_TCP_ADDR&quot; -p &quot;$$DB_PORT_5432_TCP_PORT&quot; -U &quot;$$DB_ENV_POSTGRES_USER&quot; -c &quot;CREATE DATABASE test&quot;'
+
+psql:
+	docker-compose -f dev.yml run db sh -c \
+		'psql -h &quot;$$DB_PORT_5432_TCP_ADDR&quot; -p &quot;$$DB_PORT_5432_TCP_PORT&quot; -U &quot;$$DB_ENV_POSTGRES_USER&quot;'
+</code></pre>
+
+<p>Once we have all of the databases created, we can execute the init script from Python which will create all the tables.  Also, I can run my unit test within the same environment.</p>
+
+<pre><code>init_db:
+	docker-compose -f dev.yml run web python manage.py init
+
+test:
+	docker-compose -f dev.yml run web nosetests -v
+</code></pre>
+
+<p><strong><em>Conclusion</em></strong></p>
+
+<p>With this approach, we can produce a reproducible environment for development and testing.  Instead of using a different database such as SQLite, or setting up a local instance of Postgres which will like to change over time, we can reproduce the same environment rapidly using make, docker, and docker-compose.</p>
+
+</div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kfeng-me" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        </div><div class="section">
+  <p>Copyright © 2020 Kenneth Feng.  All Rights Reserved</p>
+</div>
+</body>
+</html>

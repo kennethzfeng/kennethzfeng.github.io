@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    
+    <title>Kenneth&#39;s Notepad | Posts</title>
+</head>
+<body><div class="section">
+  <ul class="nav">
+    
+  </ul>
+</div>
+<div class="section">
+<div>
+  <h1>Posts</h1>
+  
+  <p>
+      <h3><a class="title" href="/2020/05/keep-bazel-version-consistent-with-bazelisk/">Keep Bazel version consistent with Bazelisk</a></h3>
+      <a class="summary" href="/2020/05/keep-bazel-version-consistent-with-bazelisk/">
+          <p>Bazel Bazel is a build system, which allows you to build and test source code written in many programming languages and other things such as Protocol Buffer. Keeping bazel version consistent across developer machines and continuous integration machines is challenging. Often, a continuous integration machine is running an older version of bazel. The bazel installation on the CI machine needs to be managed by someone who has privilege to install software.</p>
+      </a>
+  </p>
+  
+  <p>
+      <h3><a class="title" href="/2016/11/upgrading-pip-from-v1.4.1/">Upgrading pip from v1.4.1</a></h3>
+      <a class="summary" href="/2016/11/upgrading-pip-from-v1.4.1/">
+          <p>Story pip-v1.4.1 is installed by default when used with virtualenv on CentOS 6. In a production environment, it is preferred to upgrade pip offline. But, upgrading pip via pip install --upgrade &lt;local-pip.whl&gt; doesn&rsquo;t work. If you had a virtualenv named env, it would remove env/bin/pip after the upgrade install. After hours of testing, it appears that, instead of using a pip wheel, a source distribution tar.gz would work. pip install --upgrade pip-9.</p>
+      </a>
+  </p>
+  
+  <p>
+      <h3><a class="title" href="/2015/09/golang-gotcha/">Golang Gotcha</a></h3>
+      <a class="summary" href="/2015/09/golang-gotcha/">
+          <p>A few days ago, I ran into a Go gotcha which took me a while to figure it out. Basically, I have the following code that prints out an item from a list of integers. The item is being closed by a function closure inside the for loop.
+As you can see, this code looks perfectly normal for a Go beginner like me.
+ Apparently, it was wrong because the temporary variable, v used in the for loop is being reused by the loop itself for Every iteration.</p>
+      </a>
+  </p>
+  
+  <p>
+      <h3><a class="title" href="/2015/04/using-docker-for-development/">Using Docker for Development</a></h3>
+      <a class="summary" href="/2015/04/using-docker-for-development/">
+          <p>Docker is the new kid on the block. I believe it is going to change how we develop software. Over the past few months, I have been trying to fit Docker into my daily workflow. I finally cracked the formula. It is amazing how easy it is. We are going to piece together make, docker, and docker-compose (formerly known as fig) to streamline the workflow.
+For the purpose of this article, we are going to assume we have a web application which needs a postgres database as the backend.</p>
+      </a>
+  </p>
+  
+  <p>
+      <h3><a class="title" href="/2014/08/dynamically-create-javascript-classes/">Dynamically Create Javascript Classes</a></h3>
+      <a class="summary" href="/2014/08/dynamically-create-javascript-classes/">
+          <p>Problem Recently, I was asked to think of a way to dynamically create classes, which have static methods that are slightly different among dynamically created classes.
+Solution  I used a factory-like function to generate class with a static method that closes on the parameter name.</p>
+      </a>
+  </p>
+  
+</div>
+
+        </div><div class="section">
+  <p>Copyright © 2020 Kenneth Feng.  All Rights Reserved</p>
+</div>
+</body>
+</html>
