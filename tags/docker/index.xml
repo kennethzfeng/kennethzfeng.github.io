@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on Kenneth&#39;s Notepad</title>
@@ -18,8 +18,9 @@
       <pubDate>Sun, 12 Apr 2015 23:42:00 -0400</pubDate>
       
       <guid>https://kfeng.me/2015/04/using-docker-for-development/</guid>
-      <description>Docker is the new kid on the block. I believe it is going to change how we develop software. Over the past few months, I have been trying to fit Docker into my daily workflow. I finally cracked the formula. It is amazing how easy it is. We are going to piece together make, docker, and docker-compose (formerly known as fig) to streamline the workflow.
-For the purpose of this article, we are going to assume we have a web application which needs a postgres database as the backend.</description>
+      <description>For the purpose of this article, we are going to assume we have a web application which needs a postgres database as the backend. With the power of docker and docker compose, we can quickly spin up the database quickly.
+Let&amp;rsquo;s just say you already have the following Production Dockerfile configured.
+FROM kennethzfeng/dockerize-python:2.7.8-onbuild EXPOSE 8000 ENV APPLICATION_ENV Production CMD [&amp;quot;gunicorn&amp;quot;, &amp;quot;app:app&amp;quot;, &amp;quot;--worker-class&amp;quot;, &amp;quot;gevent&amp;quot;, &amp;quot;-b&amp;quot;, &amp;quot;0.0.0.0:8000&amp;quot;] You need to create a development version of Dockerfile called it something like Dockerfile.</description>
     </item>
     
   </channel>
