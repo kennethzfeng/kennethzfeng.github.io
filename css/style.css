@@ -15,7 +15,7 @@ a {
   text-decoration: inherit;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, time {
   padding: 0 5px;
 }
 
