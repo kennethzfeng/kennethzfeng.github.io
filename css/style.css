@@ -15,6 +15,10 @@ a {
   text-decoration: inherit;
 }
 
+h1, h2, h3, p {
+  padding: 0 5px;
+}
+
 @media (min-width: 960px) {
   .section {
     width: 50%;
@@ -25,7 +29,7 @@ a {
 }
 
 .section {
-  padding: 15px;
+  padding: 0 15px;
 }
 
 ul.nav {
