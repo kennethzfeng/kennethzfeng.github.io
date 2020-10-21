@@ -19,6 +19,9 @@ a {
   .section {
     width: 50%;
   }
+  .profile-pic {
+    width: 50%;
+  }
 }
 
 .section {
