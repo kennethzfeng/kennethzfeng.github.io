@@ -136,16 +136,16 @@
   </url>
   
   <url>
+    <loc>https://kfeng.me/pages/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kfeng.me/pages/about/</loc>
   </url>
   
   <url>
     <loc>https://kfeng.me/pages/tips/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kfeng.me/pages/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

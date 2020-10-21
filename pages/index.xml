@@ -12,12 +12,12 @@
     
     
     <item>
-      <title></title>
+      <title>Profile</title>
       <link>https://kfeng.me/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kfeng.me/pages/about/</guid>
-      <description>Profile Work Experience Software Engineer @ Yext | March 2017 - Present
+      <description>Work Experience Software Engineer @ Yext | March 2017 - Present
 Systems Engineer @ Yext | June 2016 - February 2017
 Business Systems Developer @ Intermedia | January 2015 - June 2016
 Business Systems Analyst @ Intermedia | May 2013 - December 2014
@@ -26,12 +26,12 @@ Business Systems Analyst @ Intermedia | May 2013 - December 2014
     </item>
     
     <item>
-      <title></title>
+      <title>Tips</title>
       <link>https://kfeng.me/pages/tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kfeng.me/pages/tips/</guid>
-      <description>Tips Archive rpm package is a cpio archive.
+      <description>Archive rpm package is a cpio archive.
 zip -r ../target.zip * - zip recrusively all the content under the current directory to the target.zip
 unzip -l /path/to/a.zip - list the content of the zip file
 Fails a bash script on error set -e</description>
