@@ -5,6 +5,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  color: #333333;
 }
 
 a {
