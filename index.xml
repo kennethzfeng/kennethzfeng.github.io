@@ -69,7 +69,7 @@ Solution  I used a factory-like function to generate class with a static method 
       <guid>https://kfeng.me/pages/about/</guid>
       <description>Work Experience Senior Software Engineer @ Peloton | May 2021 - Present
 Software Engineer @ Yext | March 2017 - April 2021
-- Authored a subscription feature RPC service with a 370 Peak QPS - Migrated a legacy Subscriptions with circular dependencies from Yext&amp;rsquo;s homegrown ICBM build system to Google&amp;rsquo;s Bazel build system Systems Engineer @ Yext | June 2016 - February 2017
+ Authored a subscription feature RPC service with a 370 Peak QPS Migrated a legacy Subscriptions with circular dependencies from Yext&amp;rsquo;s homegrown ICBM build system to Google&amp;rsquo;s Bazel build system  Systems Engineer @ Yext | June 2016 - February 2017
 Business Systems Developer @ Intermedia | January 2015 - June 2016</description>
     </item>
     
