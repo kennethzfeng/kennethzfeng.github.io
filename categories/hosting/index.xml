@@ -7,16 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2020 Kenneth Feng.  All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 26 Nov 2021 18:07:15 -0500</lastBuildDate>
     
 	<atom:link href="https://kfeng.me/categories/hosting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Deploy Container Image to Heroku</title>
-      <link>https://kfeng.me/1/01/deploy-container-image-to-heroku/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://kfeng.me/2021/11/deploy-container-image-to-heroku/</link>
+      <pubDate>Fri, 26 Nov 2021 18:07:15 -0500</pubDate>
       
-      <guid>https://kfeng.me/1/01/deploy-container-image-to-heroku/</guid>
+      <guid>https://kfeng.me/2021/11/deploy-container-image-to-heroku/</guid>
       <description>Status: DRAFT
 Heroku If you want to host your web application, Heroku is a great platform to host it. I started using Heroku when Docker wasn&amp;rsquo;t widely available in 2014. At that time, Heroku was a Platform as a service. Essentially, you provides your web application code, Heroku will build and deploy your application for you. Everything was managed as part of the git workflow.
 Fast forward years later, Docker becomes the dominant platform for deploying your application code regardless of programming languages.</description>
