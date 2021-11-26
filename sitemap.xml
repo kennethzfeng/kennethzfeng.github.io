@@ -136,6 +136,15 @@
   </url>
   
   <url>
+    <loc>https://kfeng.me/1/01/deploy-container-image-to-heroku/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/categories/hosting/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kfeng.me/pages/</loc>
     <priority>0</priority>
   </url>
@@ -146,6 +155,11 @@
   
   <url>
     <loc>https://kfeng.me/pages/tips/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kfeng.me/tags/heroku/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
